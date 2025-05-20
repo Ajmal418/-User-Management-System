@@ -77,64 +77,7 @@
 @endsection
 @section('script')
     <script>
-        // const getProductlist = async function() {
-        //     const response = await fetch('http://127.0.0.1:8000/api/userlist');
-        //     const json = await response.json()
-        //     let html = ''
-        //     if (json.data.length == 0) {
-        //         html += ` <tr>
-        //                 <td colspan="4" class="text-center py-4">No users found.</td>
-        //             </tr>`;
-        //     } else {
-
-        //         json.data.forEach(element => {
-
-
-        //             html += ` <tr class="border-b hover:bg-gray-50">
-        //                     <td class="px-4 py-2 border">${element.id}</td>
-        //                     <td class="px-4 py-2 border">${element.name}</td>
-        //                     <td class="px-4 py-2 border">${element.email}</td>
-        //                     <td class="px-4 py-2 border space-x-2"> 
-        //                          <button type="button" class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-600 "   ><a href="{{ url('edit') }}/${element.id}">Edit</a></button>
-        //                         <button onclick="deleteUser(this)" class="bg-red-800 text-white px-4 py-2 rounded hover:bg-red-600 "  data-id="${element.id}">Delete</button>
-        //                     </td>
-        //                 </tr>`;
-        //         });
-        //     }
-
-
-        //     document.getElementById('uselist').innerHTML = html;
-
-        // }
-        // const deleteUser = async (e) => {
-
-        //     const id = e.getAttribute('data-id')
-        //     const response = await fetch(`http://127.0.0.1:8000/api/userdelete/${id}`, {
-        //         method: "DELETE",
-        //         headers: {
-        //             Accept: "application/json",
-        //         },
-        //     });
-        //     let json = await response.json();
-        //     if (json.success !== false) {
-
-        //         let success_error = document.getElementById("success_error");
-        //         success_error.classList.remove("hidden");
-        //         document.getElementById("success_message").innerHTML = json.message;
-        //         setTimeout(() => {
-        //             success_error.classList.add("hidden");
-        //             location.reload();
-        //         }, 3000);
-        //     } else {
-        //         let error = document.getElementById("error");
-        //         error.classList.remove("hidden");
-        //         document.getElementById("error_message").innerHTML = json.message;
-        //         setTimeout(() => {
-        //             error.classList.add("hidden");
-        //         }, 3000);
-
-        //     }
-        // }
+     
 
         document.addEventListener('DOMContentLoaded', () => {
             getProductlist();
