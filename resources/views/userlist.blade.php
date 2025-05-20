@@ -48,23 +48,6 @@
                 </thead>
                 <tbody id="uselist">
 
-
-                    <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2 border"></td>
-                        <td class="px-4 py-2 border"></td>
-                        <td class="px-4 py-2 border"></td>
-                        <td class="px-4 py-2 border space-x-2">
-
-
-                            <button onclick="addToCart(this)"
-                                class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-600 "
-                                data-id="">Edit</button>
-                            <button onclick="addToCart(this)"
-                                class="bg-red-800 text-white px-4 py-2 rounded hover:bg-red-600 "
-                                data-id="">Delete</button>
-                        </td>
-                    </tr>
-
                     <tr>
                         <td colspan="4" class="text-center py-4">No users found.</td>
                     </tr>
